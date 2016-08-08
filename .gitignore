@@ -1,0 +1,7 @@
+bower_components
+node_modules
+dist
+build
+assets
+config/config.dev.json
+config/config.dist.json

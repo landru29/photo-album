@@ -1,0 +1,27 @@
+{
+  "version": "0.0.0",
+  "name": "minimal-angularjs",
+  "main": "app/index.html",
+  "ignore": [
+    "app"
+  ],
+  "dependencies": {
+    "lodash": "^4.13.1",
+    "angular": "angularjs#^1.5.8",
+    "ngstorage": "^0.3.10",
+    "font-awesome": "fontawesome#^4.6.3",
+    "bootstrap": "^3.3.7",
+    "angular-bootstrap": "^2.0.0",
+    "angular-translate": "^2.11.1",
+    "angular-ui-router": "^0.3.1",
+    "angular-translate-storage-local": "^2.11.1",
+    "angular-translate-loader-partial": "^2.11.1",
+    "angular-translate-storage-cookie": "^2.11.1",
+    "angular-sanitize": "^1.5.8",
+    "angular-resource": "^1.5.8"
+  },
+  "overrides": {},
+  "resolutions": {
+    "angular": "angularjs#^1.5.8"
+  }
+}
