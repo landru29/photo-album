@@ -10,7 +10,8 @@ angular.module("application").factory("linksInterceptor", function () {
             });
             return {
                 values: response.resource,
-                links: link
+                links: link,
+                TotalCount: response.headers('X-Total-Count')
             };
         }
     };
