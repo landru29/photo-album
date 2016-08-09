@@ -1,17 +1,17 @@
 angular.module("application").factory("linksInterceptor", function () {
     return {
         response: function (response) {
-            var link = {};
+            var links = {};
             _.forEach(response.headers("link").split(","), function (elt) {
                 var matcher = elt.match(/<([^>]*)>;\s*rel="([^"]*)"/);
                 if (matcher) {
-                    link[matcher[2]] = matcher[1];
+                    links[matcher[2]] = matcher[1];
                 }
             });
             return {
                 values: response.resource,
-                links: link,
-                TotalCount: response.headers('X-Total-Count')
+                links: links,
+                TotalCount: response.headers("X-Total-Count")
             };
         }
     };

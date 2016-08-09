@@ -1,2 +1,8 @@
-<div data-translate="hello_world"></div>
-<div data-ng-bind="Root.message"></div>
+<h2 data-translate="application_title"></h2>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2" data-ng-repeat="photo in Root.photos">
+            <img data-ng-src="{{photo.thumb}}">
+        </div>
+    </div>
+</div>
